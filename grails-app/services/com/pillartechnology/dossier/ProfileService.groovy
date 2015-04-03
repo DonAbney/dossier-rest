@@ -6,6 +6,6 @@ import grails.transaction.Transactional
 class ProfileService {
     def findProfile(String profileName)
     {
-        "Mark"     
+        new Profile()     
     }
 }

@@ -18,10 +18,13 @@ class ProfileServiceSpec extends Specification {
     }
 
     void "Profile Service returns a profile"() {
-        given:"asked for the mark profile"
+        given:"the service is provided by the framework"
+
+        when:"the service is asked for the mark profile"
             def actualProfile = service.findProfile("Mark")
         
-        expect:"the profile is not null"
-            actualProfile != null
+        then:"a profile is returned"
+            actualProfile instanceof Profile
     }
+
 }
