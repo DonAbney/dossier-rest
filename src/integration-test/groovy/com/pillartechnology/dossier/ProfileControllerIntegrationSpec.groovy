@@ -7,7 +7,7 @@ import spock.lang.*
 
 @Integration
 @Rollback
-class ProfileControllerSpec extends Specification {
+class ProfileControllerIntegrationSpec extends Specification {
 
     def setup() {
     }
