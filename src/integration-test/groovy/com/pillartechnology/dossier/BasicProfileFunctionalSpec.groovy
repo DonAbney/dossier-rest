@@ -11,7 +11,7 @@ import geb.spock.*
  */
 @Integration
 @Rollback
-class BasicProfileSpec extends GebSpec {
+class BasicProfileFunctionalSpec extends GebSpec {
 
     def setup() {
     }
