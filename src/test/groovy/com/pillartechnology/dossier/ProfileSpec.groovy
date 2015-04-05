@@ -9,14 +9,18 @@ import spock.lang.Specification
 @TestFor(Profile)
 class ProfileSpec extends Specification {
 
+    def profile
+
     def setup() {
     }
 
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == true
+    void "new profile has blog"() {
+        when:"a new profile is created"
+            profile = new Profile()
+        then:"blog to be type Blog"
+            profile.blog instanceof Blog
     }
 }
