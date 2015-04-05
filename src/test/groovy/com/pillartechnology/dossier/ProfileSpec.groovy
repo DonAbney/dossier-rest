@@ -23,4 +23,12 @@ class ProfileSpec extends Specification {
         then:"blog to be type Blog"
             profile.blog instanceof Blog
     }
+
+    void "new profile has list of source control accounts"() {
+        when:"a new profile is created"
+            profile = new Profile()
+        then:"list of source control accounts exists"
+            profile.sourceControlAccounts.size() == 0
+    }
+
 }
