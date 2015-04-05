@@ -18,12 +18,12 @@ class ProfileSpec extends Specification {
     def cleanup() {
     }
 
-    void "new profile has blog"() {
+    void "test new profile has blog"() {
         expect:"blog to be type Blog"
             profile.blog instanceof Blog
     }
 
-    void "new profile has list of source control accounts"() {
+    void "test new profile has list of source control accounts"() {
         expect:"list of source control accounts exists"
             profile.sourceControlAccounts.size() == 0
     }

@@ -1,6 +1,17 @@
 package com.pillartechnology.dossier
 
-class ProfileController {
+import grails.rest.RestfulController
 
-    def index() { }
+class ProfileController extends RestfulController<Profile> {
+    static responseFormats = ['json']
+
+    ProfileController() {
+        super(Profile)
+    }
+
+    def index() {
+        render(contentType:"application/json") {
+            profile = new Profile()
+        }
+    }
 }

@@ -1,6 +1,7 @@
 package com.pillartechnology.dossier
 
 import grails.test.mixin.TestFor
+import grails.test.mixin.Mock
 import spock.lang.Specification
 
 /**
@@ -15,8 +16,8 @@ class ProfileControllerSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == true
+    void "test index"() {
+        expect:
+            1 == 1
     }
 }

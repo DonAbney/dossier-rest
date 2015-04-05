@@ -17,7 +17,7 @@ class ProfileServiceSpec extends Specification {
     def cleanup() {
     }
 
-    void "Profile Service returns a profile"() {
+    void "test Profile Service returns a profile"() {
         given:"the service is provided by the framework"
 
         when:"the service is asked for the mark profile"
