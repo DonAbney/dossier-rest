@@ -12,22 +12,19 @@ class ProfileSpec extends Specification {
     def profile
 
     def setup() {
+        profile = new Profile()
     }
 
     def cleanup() {
     }
 
     void "new profile has blog"() {
-        when:"a new profile is created"
-            profile = new Profile()
-        then:"blog to be type Blog"
+        expect:"blog to be type Blog"
             profile.blog instanceof Blog
     }
 
     void "new profile has list of source control accounts"() {
-        when:"a new profile is created"
-            profile = new Profile()
-        then:"list of source control accounts exists"
+        expect:"list of source control accounts exists"
             profile.sourceControlAccounts.size() == 0
     }
 

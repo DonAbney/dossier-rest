@@ -1,9 +1,8 @@
 package com.pillartechnology.dossier
 
 class Profile {
-
-    Blog blog
-    List<SourceControlAccount> sourceControlAccounts
+    static hasMany = [sourceControlAccounts: SourceControlAccount]
+    static hasOne = [blog: Blog]
 
     Profile() {
         blog = new Blog()
